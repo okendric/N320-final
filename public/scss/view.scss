@@ -17,6 +17,41 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
+        .bars {
+            right: 0;
+            position: absolute;
+            display: none;
+    
+            .bar {
+                display: block;
+                width: 35px;
+                height: 5px;
+                margin: 10px 10px;
+                margin-top: 7px;
+                background-color: black;
+                transition: 0.3s ease-in-out;
+            }
+    
+            &.active {
+                .bar:nth-child(2) {
+                    opacity: 0;
+                }
+            }
+    
+            &.active {
+                .bar:nth-child(1) {
+                    transform: translateY(19.5px) rotate(45deg);
+                }
+            }
+    
+            &.active {
+                .bar:nth-child(3) {
+                    transform: translateY(-10px) rotate(-45deg);
+    
+                }
+            }
+        }
+
         .logo {
             padding-left: 50px;
 
@@ -32,6 +67,14 @@
             align-items: center;
             padding-right: 15px;
             letter-spacing: 2.5px;
+
+            &.active {
+                height: 90vh;
+                width: 100vw;
+                margin-top: -50px;
+                opacity: 1;
+                background-color: #cdae5a;
+            }
 
             .loginButton {
                 background-color: #FFD972;
@@ -428,7 +471,15 @@
 
         .nav {
             .links {
-                display: none;
+                flex-direction: column;
+                opacity: 0;
+                height: 0;
+            }
+
+            .bars {
+                display: block;
+                z-index: 99;
+                cursor: pointer;
             }
         }
 

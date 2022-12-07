@@ -20,6 +20,29 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.homePage .nav .bars {
+  right: 0;
+  position: absolute;
+  display: none;
+}
+.homePage .nav .bars .bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 10px 10px;
+  margin-top: 7px;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+.homePage .nav .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.homePage .nav .bars.active .bar:nth-child(1) {
+  transform: translateY(19.5px) rotate(45deg);
+}
+.homePage .nav .bars.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
 .homePage .nav .logo {
   padding-left: 50px;
 }
@@ -33,6 +56,13 @@
   align-items: center;
   padding-right: 15px;
   letter-spacing: 2.5px;
+}
+.homePage .nav .links.active {
+  height: 90vh;
+  width: 100vw;
+  margin-top: -50px;
+  opacity: 1;
+  background-color: #cdae5a;
 }
 .homePage .nav .links .loginButton {
   background-color: #FFD972;
@@ -222,7 +252,14 @@
 }
 @media only screen and (max-width: 767px) {
   .homePage .nav .links {
-    display: none;
+    flex-direction: column;
+    opacity: 0;
+    height: 0;
+  }
+  .homePage .nav .bars {
+    display: block;
+    z-index: 99;
+    cursor: pointer;
   }
   .homePage footer {
     display: flex;
@@ -256,6 +293,29 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.browsePage .nav .bars {
+  right: 0;
+  position: absolute;
+  display: none;
+}
+.browsePage .nav .bars .bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 10px 10px;
+  margin-top: 7px;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+.browsePage .nav .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.browsePage .nav .bars.active .bar:nth-child(1) {
+  transform: translateY(19.5px) rotate(45deg);
+}
+.browsePage .nav .bars.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
 .browsePage .nav .logo {
   padding-left: 50px;
 }
@@ -269,6 +329,13 @@
   align-items: center;
   padding-right: 15px;
   letter-spacing: 2.5px;
+}
+.browsePage .nav .links.active {
+  height: 90vh;
+  width: 100vw;
+  margin-top: -50px;
+  opacity: 1;
+  background-color: #cdae5a;
 }
 .browsePage .nav .links .loginButton {
   background-color: #FFD972;
@@ -513,7 +580,14 @@
     min-height: 1650px;
   }
   .browsePage .nav .links {
-    display: none;
+    flex-direction: column;
+    opacity: 0;
+    height: 0;
+  }
+  .browsePage .nav .bars {
+    display: block;
+    z-index: 99;
+    cursor: pointer;
   }
   .browsePage footer {
     display: flex;
@@ -570,6 +644,29 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.createPage .nav .bars {
+  right: 0;
+  position: absolute;
+  display: none;
+}
+.createPage .nav .bars .bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 10px 10px;
+  margin-top: 7px;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+.createPage .nav .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.createPage .nav .bars.active .bar:nth-child(1) {
+  transform: translateY(19.5px) rotate(45deg);
+}
+.createPage .nav .bars.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
 .createPage .nav .logo {
   padding-left: 50px;
 }
@@ -583,6 +680,13 @@
   align-items: center;
   padding-right: 15px;
   letter-spacing: 2.5px;
+}
+.createPage .nav .links.active {
+  height: 90vh;
+  width: 100vw;
+  margin-top: -50px;
+  opacity: 1;
+  background-color: #cdae5a;
 }
 .createPage .nav .links .loginButton {
   background-color: #FFD972;
@@ -801,7 +905,14 @@
 }
 @media only screen and (max-width: 767px) {
   .createPage .nav .links {
-    display: none;
+    flex-direction: column;
+    opacity: 0;
+    height: 0;
+  }
+  .createPage .nav .bars {
+    display: block;
+    z-index: 99;
+    cursor: pointer;
   }
   .createPage footer {
     display: flex;
@@ -850,6 +961,29 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.morePage .nav .bars {
+  right: 0;
+  position: absolute;
+  display: none;
+}
+.morePage .nav .bars .bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 10px 10px;
+  margin-top: 7px;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+.morePage .nav .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.morePage .nav .bars.active .bar:nth-child(1) {
+  transform: translateY(19.5px) rotate(45deg);
+}
+.morePage .nav .bars.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
 .morePage .nav .logo {
   padding-left: 50px;
 }
@@ -863,6 +997,13 @@
   align-items: center;
   padding-right: 15px;
   letter-spacing: 2.5px;
+}
+.morePage .nav .links.active {
+  height: 90vh;
+  width: 100vw;
+  margin-top: -50px;
+  opacity: 1;
+  background-color: #cdae5a;
 }
 .morePage .nav .links .loginButton {
   background-color: #FFD972;
@@ -1108,7 +1249,14 @@
 }
 @media only screen and (max-width: 767px) {
   .morePage .nav .links {
-    display: none;
+    flex-direction: column;
+    opacity: 0;
+    height: 0;
+  }
+  .morePage .nav .bars {
+    display: block;
+    z-index: 99;
+    cursor: pointer;
   }
   .morePage footer {
     display: flex;
@@ -1151,6 +1299,29 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.viewPage .nav .bars {
+  right: 0;
+  position: absolute;
+  display: none;
+}
+.viewPage .nav .bars .bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 10px 10px;
+  margin-top: 7px;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+.viewPage .nav .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.viewPage .nav .bars.active .bar:nth-child(1) {
+  transform: translateY(19.5px) rotate(45deg);
+}
+.viewPage .nav .bars.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
 .viewPage .nav .logo {
   padding-left: 50px;
 }
@@ -1164,6 +1335,13 @@
   align-items: center;
   padding-right: 15px;
   letter-spacing: 2.5px;
+}
+.viewPage .nav .links.active {
+  height: 90vh;
+  width: 100vw;
+  margin-top: -50px;
+  opacity: 1;
+  background-color: #cdae5a;
 }
 .viewPage .nav .links .loginButton {
   background-color: #FFD972;
@@ -1483,7 +1661,14 @@
     min-height: 1650px;
   }
   .viewPage .nav .links {
-    display: none;
+    flex-direction: column;
+    opacity: 0;
+    height: 0;
+  }
+  .viewPage .nav .bars {
+    display: block;
+    z-index: 99;
+    cursor: pointer;
   }
   .viewPage footer {
     display: flex;
@@ -1540,6 +1725,29 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
+.loginPage .nav .bars {
+  right: 0;
+  position: absolute;
+  display: none;
+}
+.loginPage .nav .bars .bar {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 10px 10px;
+  margin-top: 7px;
+  background-color: black;
+  transition: 0.3s ease-in-out;
+}
+.loginPage .nav .bars.active .bar:nth-child(2) {
+  opacity: 0;
+}
+.loginPage .nav .bars.active .bar:nth-child(1) {
+  transform: translateY(19.5px) rotate(45deg);
+}
+.loginPage .nav .bars.active .bar:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
 .loginPage .nav .logo {
   padding-left: 50px;
 }
@@ -1553,6 +1761,13 @@
   align-items: center;
   padding-right: 15px;
   letter-spacing: 2.5px;
+}
+.loginPage .nav .links.active {
+  height: 90vh;
+  width: 100vw;
+  margin-top: -50px;
+  opacity: 1;
+  background-color: #cdae5a;
 }
 .loginPage .nav .links .loginButton {
   background-color: #FFD972;
@@ -1840,7 +2055,14 @@
     height: 1200px;
   }
   .loginPage .nav .links {
-    display: none;
+    flex-direction: column;
+    opacity: 0;
+    height: 0;
+  }
+  .loginPage .nav .bars {
+    display: block;
+    z-index: 99;
+    cursor: pointer;
   }
   .loginPage footer {
     display: flex;
